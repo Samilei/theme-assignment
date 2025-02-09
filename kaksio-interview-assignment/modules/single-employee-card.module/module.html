@@ -1,1 +1,38 @@
 <!-- module html  -->
+<section class="single-employee-card {{ name }}">
+
+    <div class="employee-card">      
+      <div class="card-image">
+        {% if module.employee_image.src %}
+          <img src="{{ module.employee_image.src|escape_url }}" alt="{{ module.employee_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      <h3>
+        {{ module.employee_name }}
+      </h3>
+      <span>{{ module.employee_title }}</span>
+      <div class="card-links">
+          {% set href = module.employee_email.url.href %}
+          <a class="email-link" href="mailto: {{ href }}">{{ href }}
+          </a>
+          <b><a href="{{ module.employee_linkedin }}">LinkedIn</a></b>
+      </div>
+    </div>
+
+</section>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var emailLink = document.getElementsByClassName("{{ name }}")[0].getElementsByClassName("email-link")[0];
+
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (!isMobile) {
+      var email = emailLink.textContent.trim();
+      emailLink.href = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(email);
+      emailLink.target = "_blank"; 
+    }
+  });
+</script>
+
