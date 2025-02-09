@@ -1,11 +1,110 @@
 [
   {
-    "default": "<h1>Hello, world!</h1>",
-    "label": "Rich text field",
-    "locked": false,
-    "name": "text",
-    "required": false,
-    "type": "richtext",
-    "validation_regex": ""
+   "default": {
+    "src": "../../images/employee_image.jpg",
+    "alt": null,
+    "size_type": "auto",
+    "width": null,
+    "height": null,
+    "max_width": null,
+    "max_height": null,
+    "loading": "lazy"
+   },
+   "display_width": null,
+   "id": "958fe50e-a77e-88d2-51ef-1dfc96d69717",
+   "label": "Employee Image",
+   "locked": false,
+   "name": "employee_image",
+   "required": false,
+   "resizable": false,
+   "responsive": true,
+   "show_loading": false,
+   "type": "image"
+  },
+  {
+   "allow_new_line": false,
+   "default": "Firstname Lastname",
+   "display_width": null,
+   "id": "67c33d22-fec9-504d-671e-03db091d22b8",
+   "label": "Employee Name",
+   "locked": false,
+   "name": "employee_name",
+   "required": false,
+   "show_emoji_picker": false,
+   "type": "text",
+   "validation_regex": ""
+  },
+  {
+   "allow_new_line": false,
+   "default": "Title",
+   "display_width": null,
+   "id": "59a4d705-324a-0d9c-f175-ab5824687c9c",
+   "label": "Employee Title",
+   "locked": false,
+   "name": "employee_title",
+   "required": false,
+   "show_emoji_picker": false,
+   "type": "text",
+   "validation_regex": ""
+  },
+  {
+   "default": {
+    "url": {
+     "content_id": null,
+     "href": "email@email.com",
+     "type": "EMAIL_ADDRESS"
+    },
+    "open_in_new_tab": false,
+    "no_follow": false
+   },
+   "display_width": null,
+   "id": "2eed2489-8f24-9cef-e69c-c8b38cf8f3a7",
+   "label": "Employee Email",
+   "locked": false,
+   "name": "employee_email",
+   "required": false,
+   "show_advanced_rel_options": false,
+   "supported_types": [
+    "EXTERNAL",
+    "CONTENT",
+    "FILE",
+    "EMAIL_ADDRESS",
+    "BLOG",
+    "CALL_TO_ACTION",
+    "PHONE_NUMBER",
+    "WHATSAPP_NUMBER",
+    "PAYMENT"
+   ],
+   "type": "link"
+  },
+  {
+   "default": {
+    "url": {
+     "content_id": null,
+     "href": "http://linkedin.com",
+     "type": "EXTERNAL"
+    },
+    "open_in_new_tab": true,
+    "no_follow": false
+   },
+   "display_width": null,
+   "id": "faafd2fc-3014-218f-bec0-af9eb92dd18b",
+   "label": "Employee LinkedIn",
+   "locked": false,
+   "name": "employee_linkedin",
+   "required": false,
+   "show_advanced_rel_options": false,
+   "supported_types": [
+    "EXTERNAL",
+    "CONTENT",
+    "FILE",
+    "EMAIL_ADDRESS",
+    "BLOG",
+    "CALL_TO_ACTION",
+    "PHONE_NUMBER",
+    "WHATSAPP_NUMBER",
+    "PAYMENT"
+   ],
+   "type": "link"
   }
-]
+ ]
