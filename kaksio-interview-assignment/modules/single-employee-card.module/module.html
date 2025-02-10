@@ -7,10 +7,12 @@
           <img src="{{ module.employee_image.src|escape_url }}" alt="{{ module.employee_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
         {% endif %}
       </div>
-      <h3>
-        {{ module.employee_name }}
-      </h3>
-      <span>{{ module.employee_title }}</span>
+      <div class="card-text">
+        <h3>
+            {{ module.employee_name }}
+        </h3>
+        <span>{{ module.employee_title }}</span>
+      </div>
       <div class="card-links">
           {% set href = module.employee_email.url.href %}
           <a class="email-link" href="mailto: {{ href }}">{{ href }}

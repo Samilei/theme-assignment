@@ -3,7 +3,7 @@
 }
 
 .single-employee-card .employee-card {
-    gap: 1em;
+    gap: 2em;
     display: flex;
     flex-direction: column;
     margin-left: auto;
